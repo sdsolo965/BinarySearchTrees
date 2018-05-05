@@ -11,7 +11,7 @@ namespace BinarySearchTrees
         bool IsEmpty();
         int Cardinality();
         bool Member(T element);
-        NonEmptyBST<T> add(T element);
+        NonEmptyBST<T> Add(T element);
         int MaxDepth();
     }
 }

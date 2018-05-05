@@ -23,7 +23,7 @@ namespace BinarySearchTrees
             return false;
         }
 
-        public NonEmptyBST<T> add(T element)
+        public NonEmptyBST<T> Add(T element)
         {
             return new NonEmptyBST<T>(element);
         }

@@ -51,7 +51,7 @@ namespace BinarySearchTrees
             }
         }
 
-        public NonEmptyBST<T> add(T element)
+        public NonEmptyBST<T> Add(T element)
         {
             if (data.Equals(element))
             {
@@ -61,11 +61,11 @@ namespace BinarySearchTrees
             {
                 if (element.CompareTo(data) < 0)
                 {
-                    return new NonEmptyBST<T>(data, left.add(element), right);
+                    return new NonEmptyBST<T>(data, left.Add(element), right);
                 }
                 else
                 {
-                    return new NonEmptyBST<T>(data, left, right.add(element));
+                    return new NonEmptyBST<T>(data, left, right.Add(element));
                 }
             }
         }
