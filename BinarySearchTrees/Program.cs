@@ -17,7 +17,7 @@ namespace BinarySearchTrees
             for (int i = 1; i < totalInputs-1; i++)
             {
                 int data = Convert.ToInt32(Console.ReadLine());
-                root.Add(data);
+                root = root.Add(data);
             }
             //while (totalInputs-- > 0)
             //{
@@ -25,7 +25,7 @@ namespace BinarySearchTrees
             //    root.Add(data);
             //}
 
-            Console.WriteLine($"This trees max depth is: {root.MaxDepth()} nodes.");
+            Console.WriteLine($"This tree has a depth of: {root.MaxDepth()} nodes.");
         }
     }
 }
